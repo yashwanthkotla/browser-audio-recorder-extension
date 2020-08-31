@@ -5,6 +5,7 @@ const extend = function() { //helper function to merge objects
     let src = sources[i];
     for (key in src) {
       let val = src[key];
+      let a=10;
       target[key] = typeof val === "object"
         ? extend(typeof target[key] === "object" ? target[key] : {}, val)
         : val;
